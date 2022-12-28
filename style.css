@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.locationEnter {
+  margin-bottom: 2%;
+  width: 60%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.locationEnter input {
+  width: 90%;
+  height: 100%;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bolder;
+  padding-left: 10px;
+  font-size: 1.25rem;
+}
+
+.locationEnter button {
+  width: 5%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+}
+
+.main {
+  width: 60%;
+  height: 80%;
+  position: relative;
+}
+
+.backgroundMain {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  position: absolute;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.date-time-location {
+  width: 100%;
+  height: 18%;
+  background-color: black;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px 0 0;
+}
+
+.date-time,
+.location {
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+.date-time {
+  font-size: 1.5rem;
+  height: 40%;
+  padding-top: 16px;
+}
+
+.location {
+  font-size: 2.5rem;
+  height: 60%;
+  font-weight: bolder;
+}
+
+.current {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  opacity: 100%;
+}
+
+.currentImg {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cImg {
+  width: 60%;
+}
+
+.currentData {
+  height: 100%;
+  width: 55%;
+}
+
+.currentTemp {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currentConditions {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conditionContainer {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currTemp {
+  width: 40%;
+  height: 80%;
+  position: relative;
+}
+
+.val {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.75rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.tSeparator {
+  width: 100%;
+  height: 2px;
+  background-color: #2a4c73;
+}
+
+.type {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typeSeparator {
+  width: 2px;
+  height: 100%;
+  background-color: #2a4c73;
+}
+
+.c,
+.f {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.c {
+  color: aqua;
+}
+
+.f {
+  color: white;
+}
+
+.maxTemp {
+  width: 25%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 10px;
+}
+
+.minTemp {
+  width: 25%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.currTemp::before,
+.minTemp::before,
+.maxTemp::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  opacity: 0.5;
+  border-radius: 20px;
+}
+
+.tempText {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.65rem;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minTempText,
+.maxTempText {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: bold;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.windSpeed,
+.humidity,
+.uv {
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.windSpeed::before,
+.humidity::before,
+.uv::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  opacity: 0.5;
+  border-radius: 20px;
+}
+
+.windSpeed {
+  margin: 0 20px;
+}
+
+.hValue,
+.hIcon,
+.uValue,
+.uIcon,
+.wValue,
+.wIcon {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.hIcon img,
+.wIcon img,
+.uIcon img {
+  height: 60%;
+  margin-top: 10px;
+}
+
+.forecast {
+  width: 100%;
+  height: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.fo {
+  width: 45%;
+  height: 85%;
+  z-index: 5;
+  border-radius: 20px;
+}
+
+.time {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.time::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.fContent {
+  height: 75%;
+  width: 100%;
+  display: flex;
+}
+
+.fTemp {
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.fTemp::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.fTempIcon {
+  width: 100%;
+  height: 68%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fTempText {
+  width: 100%;
+  height: 32%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fContentInner {
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+}
+
+.fUV,
+.fHumidity,
+.fWindSpeed {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.fIcon {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fHumidity::before,
+.fUV::before,
+.fWindSpeed::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.fIcon img {
+  height: 80%;
+}
+
+.fVal {
+  width: 60%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+@media screen and (width< 1000px) and (width>=500px) {
+  .main {
+    width: 90%;
+  }
+  .locationEnter {
+    width: 90%;
+  }
+}
+
+@media screen and (width< 500px) {
+  .main {
+    width: 90%;
+  }
+  .locationEnter {
+    width: 90%;
+  }
+  .val {
+    font-size: 2.5rem;
+  }
+  .tempText {
+    font-size: 1.25rem;
+  }
+  .c,
+  .f,
+  .maxTempText,
+  .minTempText {
+    font-size: 1.5rem;
+  }
+  .locationEnter input {
+    margin-right: 5px;
+    width: 90%;
+    padding-left: 10px;
+    font-size: 1.05rem;
+  }
+  .locationEnter button {
+    width: 10%;
+  }
+  .fVal,
+  .fTempText {
+    font-size: 1.25rem;
+  }
+
+  .maxTemp {
+    margin: 0 5px;
+  }
+
+  .windSpeed {
+    margin: 0 10px;
+  }
+
+  .fIcon {
+    height: 80%;
+  }
+}

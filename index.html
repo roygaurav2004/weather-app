@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img class="bg-img" src="" alt="" srcset="" />
+      <div class="locationEnter">
+        <input class="locationEnterVal" type="text" value="Enter location..." />
+        <button class="locationEnterBtn">Go</button>
+      </div>
+      <div class="main">
+        <div class="backgroundMain"></div>
+        <div class="date-time-location">
+          <div class="date-time"></div>
+          <div class="location"></div>
+        </div>
+        <div class="current">
+          <div class="currentImg"></div>
+          <div class="currentData">
+            <div class="currentTemp">
+              <div class="currTemp">
+                <div class="val"></div>
+                <div class="tSeparator"></div>
+                <div class="type">
+                  <div class="c">°C</div>
+                  <div class="typeSeparator"></div>
+                  <div class="f">°F</div>
+                </div>
+              </div>
+              <div class="maxTemp">
+                <div class="tempText">Max Temp</div>
+                <div class="tSeparator"></div>
+                <div class="maxTempText"></div>
+              </div>
+              <div class="minTemp">
+                <div class="tempText">Min Temp</div>
+                <div class="tSeparator"></div>
+                <div class="minTempText"></div>
+              </div>
+            </div>
+            <div class="currentConditions">
+              <div class="conditionContainer">
+                <div class="humidity">
+                  <div class="hIcon">
+                    <img src="humidity.png" alt="" srcset="" />
+                  </div>
+                  <div class="hValue">10</div>
+                </div>
+                <div class="windSpeed">
+                  <div class="wIcon">
+                    <img src="storm.png" alt="" srcset="" />
+                  </div>
+                  <div class="wValue">10</div>
+                </div>
+                <div class="uv">
+                  <div class="uIcon">
+                    <img src="ultraviolet.png" alt="" srcset="" />
+                  </div>
+                  <div class="uValue">10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="forecast"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
